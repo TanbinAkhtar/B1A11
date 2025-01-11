@@ -13,17 +13,17 @@
     justify-content: center;
     align-items: center;
     gap: 16px;
-
-    background-color: rgb(176, 203, 176);
+    
+    background-color: rgb(206, 236, 206);
     border-radius: 18px;
 }
 .banner-img > img {
     height: 350px;
     width: 400px;
-    padding: 40px 150px 40px 5px;
+    padding: 40px 200px 40px 5px;
 }
 .banner-title {
-    padding: 40px 10px 40px 170px;
+    padding: 40px 10px 40px 220px;
 }
 .title {
     font-weight: 700;
@@ -38,6 +38,7 @@
 .dark-green-btn {
     background-color: #006A50;
     border-radius: 8px;
+    border: none;
     padding: 8px 14px;
     color: white;
     font-weight: 600;
@@ -59,6 +60,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 30px;
+    border-radius: 30px;
 }
 .section-title{
     margin: 20px 0px 0px 50px;
@@ -66,6 +69,7 @@
 .section-title h2 {
     font-weight: 700;
     font-size: 38px;
+    padding-bottom: 15px;
 }
 .section-title > p{
     font-weight: 400;
@@ -99,9 +103,14 @@
 }
 .card{
     background-color: white;
-    border: 2px solid black;
     border-radius: 18px;
     padding: 20px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05); 
+    border-color: #333; 
 }
 #first-card{
     background-color:skyblue;
@@ -109,6 +118,7 @@
 
 #second-card {
     background-color: rgb(153, 238, 153);
+
 }
 #third-card{
     background-color: rgb(228, 228, 143);
@@ -116,6 +126,7 @@
 
 .blue-btn{
     background-color: blue;
+    border: none;
     border-radius: 8px;
     padding: 8px 14px 8px 14px;
     color: white;
@@ -124,6 +135,7 @@
 }
 .green-btn{
     background-color: green;
+    border: none;
     border-radius: 8px;
     padding: 8px 14px 8px 14px;
     color: white;
@@ -132,16 +144,43 @@
 }
 .yellow-btn{
     background-color: rgb(156, 156, 7);
+    border: none;
     border-radius: 8px;
     padding: 8px 14px 8px 14px;
     color: white;
     font-weight: 600;
     font-size: 14px;
 }
+.blue-btn, .green-btn, .yellow-btn {
+    border-radius: 8px;
+    padding: 8px 14px;
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+    transition: 0.3s; 
+}
+
+
+.blue-btn:hover {
+    background-color: darkblue;
+    transform: scale(1.1); 
+}
+
+.green-btn:hover {
+    background-color: darkgreen;
+    transform: scale(1.1);
+}
+
+.yellow-btn:hover {
+    background-color: #a0a000;
+    transform: scale(1.1);
+}
+
 /******** Quote *******/
 .quote-section{
-    background-color: #939292;
-    margin: 20px;
+    background-color: whitesmoke;
+    border-radius: 20px;
+    margin: 50px;
     padding: 30px;
 }
 .quote-section > h3 {
@@ -163,15 +202,16 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-justify-content: center;
-background-color: rgb(213, 212, 212);
+    justify-content: center;
+    border-radius: 30px;
+    padding: 50px;
 }
 .sat-card-1{
     display: flex;
     justify-content: center;
     align-items: center;
     gap:50px;   
-    background-color: beige;
+    background-color: rgb(246, 246, 234);;
     border-radius: 20px;
     margin: 20px 40px 40px 40px;
     padding: 30px 40px 20px 40px;
@@ -198,11 +238,30 @@ background-color: rgb(213, 212, 212);
     justify-content: center;
     align-items: center;
     gap:50px;   
-    background-color: beige;
+    background-color: rgb(246, 246, 234);
     border-radius: 20px;
     margin: 20px 40px 40px 40px;
     padding: 30px 40px 20px 40px;
 }
+
+.sat-card-1, .sat-card-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;   
+    background-color: beige;
+    border-radius: 20px;
+    margin: 20px 40px 40px 40px;
+    padding: 30px 40px 20px 40px;
+    transition: 0.3s;
+}
+
+.sat-card-1:hover, .sat-card-2:hover {
+    background-color: whitesmoke;
+    transform: scale(1.05); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
 
 /*********** Donate Today ***********/
 .donation {
@@ -211,8 +270,10 @@ background-color: rgb(213, 212, 212);
     justify-content: center;
     align-items: center;
     gap: 10px;
-    margin: 20px 0px;
-    padding-bottom: 40px;
+    padding: 50px;
+    margin: 10px 60px;
+    background-color: whitesmoke;
+    border-radius: 20px;
 }
 .donation-title{
     text-align: center;
@@ -233,12 +294,14 @@ background-color: rgb(213, 212, 212);
 }
 
 .blue-card {
-    background-color: skyblue;
+    background-color: rgb(193, 228, 241);
 }
 .other-amount >input{
-    width: 700px;
-    height: 30px;
-    border-radius: 20px;
+    width: 800px;
+    height: 55px;
+    margin: 25px;
+    border-radius: 10px;
+    border: white;
     font-size: 16px;
     text-align: center;
 }
@@ -251,7 +314,7 @@ background-color: rgb(213, 212, 212);
 
 
 .box > h2:hover {
-    background-color: lightcoral;
+    background-color: rgb(84, 137, 158);
     transform: scale(1.1);
     cursor: grab; 
 }
@@ -267,25 +330,28 @@ background-color: rgb(213, 212, 212);
     justify-content: center;
     background-color: rgb(202, 235, 202);
     border-radius: 10px;
-    padding-bottom: 40px;
-    margin: 10px 0px;
+    padding: 90px;
+    margin: 80px 60px;
 }
 .subscribe-title{
     text-align: center;
+    margin: 10px;
 }
 .subscribe-text{
     text-align: center;
-    padding: 0px 100px;
+    padding: 20px 100px;
 }
 .subscription-area{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 10px;
 }
 .input-area > input {
     width: 500px;
-    height: 35px;
+    height: 40px;
     border-radius: 6px;
+    border: white;
     font-size: 16px;
     padding: 0px 20px;
 }
@@ -293,4 +359,27 @@ background-color: rgb(213, 212, 212);
 .subscribe-btn > button {
     border-radius: 6px;
     height: 40px;
+}
+
+/******** Footer section *******/
+footer{
+    margin: 10px;
+}
+.footer-section {
+    text-align: center;
+    margin-top: 90px;
+     
+}
+.social-icons {
+    padding: 20px;
+    margin: 30px;
+}
+.facebook {
+    padding: 20px;
+}
+.instagram {
+    padding: 20px;
+}
+.x {
+    padding: 20px;
 }
