@@ -34,7 +34,7 @@
     font-weight: 500;
     font-size: 10px;
 }
-.title > button{
+.dark-green-btn{
     background-color: #006A50;
     border-radius: 8px;
     padding: 8px 14px 8px 14px;
@@ -46,14 +46,14 @@
 
 /****************** Vision ****************/
 
-.vision-title{
+.section-title{
     margin: 20px 0px 20px 50px;
 }
-.vision-title > h2 {
+.section-title h2 {
     font-weight: 700;
     font-size: 20px;
 }
-.vision-title > p{
+.section-title > p{
     font-weight: 400;
     font-size: 10px;
     color: #595757;
@@ -94,3 +94,35 @@
 }
 
 /******** Recent-News *********/
+
+.sat-card-1{
+    background-color: wheat;
+    padding: 20px 40px 20px 40px;
+    margin: 20px;
+}
+.sat-card-1{
+    display: flex;
+    justify-content: center;
+    gap:50px;   
+}
+.satellite-img > img {
+    height: 220px;
+    width: 300px;
+    border-radius: 30px;
+   
+}
+.satellite-info > h3 {
+    font-weight: 600;
+    font-size: 20px;
+}
+.satellite-info > img{
+    height: 20px;
+}
+.satellite-info > time ,p  {
+    font-size: 10px;
+    font-weight: 400;
+}
+#sat-pera{
+    padding-right:250px;
+}
+
