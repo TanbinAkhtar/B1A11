@@ -13,7 +13,7 @@
     justify-content: center;
     align-items: center;
     gap: 16px;
-    /* background-color: #C6E4D6; */
+
     background-color: rgb(176, 203, 176);
     border-radius: 18px;
 }
@@ -35,15 +35,23 @@
     font-weight: 500;
     font-size: 18px;
 }
-.dark-green-btn{
+.dark-green-btn {
     background-color: #006A50;
     border-radius: 8px;
-    padding: 8px 14px 8px 14px;
+    padding: 8px 14px;
     color: white;
     font-weight: 600;
     font-size: 16px;
-    
+    transition: 0.3s; 
 }
+
+/* Hover effect */
+.dark-green-btn:hover {
+    background-color: #004C3A; 
+    transform: scale(1.1); 
+}
+
+
 
 /****************** Vision ****************/
 .vision{
@@ -130,6 +138,24 @@
     font-weight: 600;
     font-size: 14px;
 }
+/******** Quote *******/
+.quote-section{
+    background-color: #939292;
+    margin: 20px;
+    padding: 30px;
+}
+.quote-section > h3 {
+    font-weight: 700;
+    font-size: 38px;
+    text-align: center;
+}
+.quote {
+    background-image: url(../assets/quote-bg.png);
+    background-repeat: no-repeat;
+    padding: 10px;
+    margin: 0px 40px 30px 40px;
+    
+}
 
 /******** Recent-News *********/
 
@@ -205,6 +231,7 @@ background-color: rgb(213, 212, 212);
     padding: 25px;
     border-radius: 25px;
 }
+
 .blue-card {
     background-color: skyblue;
 }
@@ -215,6 +242,21 @@ background-color: rgb(213, 212, 212);
     font-size: 16px;
     text-align: center;
 }
+.box > h2 {
+    border: 1px solid black;
+    padding: 25px;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+
+
+.box > h2:hover {
+    background-color: lightcoral;
+    transform: scale(1.1);
+    cursor: grab; 
+}
+
+
 
 /***************** subscription area **************/
 
